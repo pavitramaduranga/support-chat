@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "l3xVJNsb+BeFsJ6qn0ZRDast3XFAbPdpyeq4OKF0LsGB1aj4LCib5rG+k+FHRkXDIp2L7FtH2A7PA5VyZaIJhA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\pmd.SL\\Documents\\Lab\\Malta\\Source\\Support.Chat.Portal\\API\\Client.API.Services\\Client.API.Services.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\pmd.SL\\.nuget\\packages\\rabbitmq.client\\6.4.0\\rabbitmq.client.6.4.0.nupkg.sha512",
+    "C:\\Users\\pmd.SL\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
+    "C:\\Users\\pmd.SL\\.nuget\\packages\\system.threading.channels\\4.7.1\\system.threading.channels.4.7.1.nupkg.sha512"
+  ],
+  "logs": []
+}

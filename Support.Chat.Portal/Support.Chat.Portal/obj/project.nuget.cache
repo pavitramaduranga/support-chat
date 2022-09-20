@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "LBmj3zUxT4d7R1rqXpcsH+0Kiq94Tdv/ZX2lwyx6pNsCE2LkfTX16spPDCTc0z9TJ6aUJzM0hQbcGzStr9o6dw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\pmd.SL\\Documents\\Lab\\Malta\\Source\\Support.Chat.Portal\\Support.Chat.Portal\\Support.Chat.Portal.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\pmd.SL\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.17.0\\microsoft.visualstudio.azure.containers.tools.targets.1.17.0.nupkg.sha512"
+  ],
+  "logs": []
+}

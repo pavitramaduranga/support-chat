@@ -1,0 +1,17 @@
+C:\Users\pmd.SL\Documents\Lab\Malta\Source\Support.Chat.Portal\Agent\Agent.App.CLI\bin\Debug\net6.0\Agent.App.CLI.exe
+C:\Users\pmd.SL\Documents\Lab\Malta\Source\Support.Chat.Portal\Agent\Agent.App.CLI\bin\Debug\net6.0\Agent.App.CLI.deps.json
+C:\Users\pmd.SL\Documents\Lab\Malta\Source\Support.Chat.Portal\Agent\Agent.App.CLI\bin\Debug\net6.0\Agent.App.CLI.runtimeconfig.json
+C:\Users\pmd.SL\Documents\Lab\Malta\Source\Support.Chat.Portal\Agent\Agent.App.CLI\bin\Debug\net6.0\Agent.App.CLI.dll
+C:\Users\pmd.SL\Documents\Lab\Malta\Source\Support.Chat.Portal\Agent\Agent.App.CLI\bin\Debug\net6.0\Agent.App.CLI.pdb
+C:\Users\pmd.SL\Documents\Lab\Malta\Source\Support.Chat.Portal\Agent\Agent.App.CLI\obj\Debug\net6.0\Agent.App.CLI.csproj.AssemblyReference.cache
+C:\Users\pmd.SL\Documents\Lab\Malta\Source\Support.Chat.Portal\Agent\Agent.App.CLI\obj\Debug\net6.0\Agent.App.CLI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pmd.SL\Documents\Lab\Malta\Source\Support.Chat.Portal\Agent\Agent.App.CLI\obj\Debug\net6.0\Agent.App.CLI.AssemblyInfoInputs.cache
+C:\Users\pmd.SL\Documents\Lab\Malta\Source\Support.Chat.Portal\Agent\Agent.App.CLI\obj\Debug\net6.0\Agent.App.CLI.AssemblyInfo.cs
+C:\Users\pmd.SL\Documents\Lab\Malta\Source\Support.Chat.Portal\Agent\Agent.App.CLI\obj\Debug\net6.0\Agent.App.CLI.csproj.CoreCompileInputs.cache
+C:\Users\pmd.SL\Documents\Lab\Malta\Source\Support.Chat.Portal\Agent\Agent.App.CLI\obj\Debug\net6.0\Agent.App.CLI.dll
+C:\Users\pmd.SL\Documents\Lab\Malta\Source\Support.Chat.Portal\Agent\Agent.App.CLI\obj\Debug\net6.0\refint\Agent.App.CLI.dll
+C:\Users\pmd.SL\Documents\Lab\Malta\Source\Support.Chat.Portal\Agent\Agent.App.CLI\obj\Debug\net6.0\Agent.App.CLI.pdb
+C:\Users\pmd.SL\Documents\Lab\Malta\Source\Support.Chat.Portal\Agent\Agent.App.CLI\obj\Debug\net6.0\Agent.App.CLI.genruntimeconfig.cache
+C:\Users\pmd.SL\Documents\Lab\Malta\Source\Support.Chat.Portal\Agent\Agent.App.CLI\obj\Debug\net6.0\ref\Agent.App.CLI.dll
+C:\Users\pmd.SL\Documents\Lab\Malta\Source\Support.Chat.Portal\Agent\Agent.App.CLI\bin\Debug\net6.0\RabbitMQ.Client.dll
+C:\Users\pmd.SL\Documents\Lab\Malta\Source\Support.Chat.Portal\Agent\Agent.App.CLI\obj\Debug\net6.0\Agent.App.CLI.csproj.CopyComplete
