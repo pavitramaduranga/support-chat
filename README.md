@@ -25,6 +25,9 @@ In the Visual Studio Package Manager Console, select the AgentCoordication.CLI a
 <li>Update-Database</li>
 </ul>
 
+Initial data is added with the seed method.<br>
+To explore the SqlLite DB use https://sqlitebrowser.org/dl/.<br>
+
 Below is the project structure :
 <br>
 
