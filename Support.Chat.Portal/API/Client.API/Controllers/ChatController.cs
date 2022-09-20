@@ -16,15 +16,15 @@ namespace Client.API.Controllers
         }
 
         [HttpGet]
-        public string Get()
+        public string Get(string useremail)
         {
             SessionQueService ss = new();
-            ss.PublishMessage("1");
-
-
+            ss.PublishMessage(useremail);
             return "Chat Client connected";
 
 
         }
+
+
     }
 }
