@@ -1,9 +1,28 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using AgentCoordination.CLI.Data;
+using Microsoft.EntityFrameworkCore;
 using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
 using System.Text;
 
 Console.WriteLine("Agent Coordination CLI");
+
+#region DB Test
+
+using (var context = new CoordinatorDbContext())
+{
+    foreach (var seniority in context.Seniorities)
+    {
+        Console.WriteLine($"seniority {seniority.Name}");
+
+        //foreach (var post in blog.Posts)
+        //{
+        //    Console.WriteLine($"\t{post.Title}: {post.Content} by {post.AuthorName.First} {post.AuthorName.Last}");
+        //}
+    }
+}
+
+#endregion
 
 var factory = new ConnectionFactory() { HostName = "localhost" };
 using (var connection = factory.CreateConnection())
