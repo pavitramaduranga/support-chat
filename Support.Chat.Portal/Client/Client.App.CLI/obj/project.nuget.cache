@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UuN3Sjg1DdwOrNN74V3MgURLJtBNzRMgjqVPoChIXQw4iW61MPkK5d5zwGUZmjDVG++j86KzDy1gdgsig5q96Q==",
+  "dgSpecHash": "sixNpe5yZnhHJul+UtP+3pg72EhX5kkIv7z9+4/ZncQD4t2lflyrjQ+ydwLVXdgF077NEM9wgGGcE48JaJRHhA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\pmd.SL\\Documents\\Lab\\Malta\\Source\\Support.Chat.Portal\\Client\\Client.App.CLI\\Client.App.CLI.csproj",
+  "projectFilePath": "C:\\Users\\pmd.SL\\Documents\\Lab\\Malta\\Source\\support-chat\\Support.Chat.Portal\\Client\\Client.App.CLI\\Client.App.CLI.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

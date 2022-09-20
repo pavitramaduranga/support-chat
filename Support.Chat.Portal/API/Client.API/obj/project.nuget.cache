@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Iz9Jbzksr9/AaihG+TTxGSVMafjgBskjJbir4fKap8lcan4CUteAB+yaPOsILt5CUXlvasRpT/35o6VxIHsdLg==",
+  "dgSpecHash": "TfJiTqeGnu4kdkGnOu98pGlkl6HFDbLurKrkkG8yzqMZQ+tiloOzmzAKNkScPZjYLrQNqHoE3Mh7dA2hB584Qg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\pmd.SL\\Documents\\Lab\\Malta\\Source\\Support.Chat.Portal\\API\\Client.API\\Client.API.csproj",
+  "projectFilePath": "C:\\Users\\pmd.SL\\Documents\\Lab\\Malta\\Source\\support-chat\\Support.Chat.Portal\\API\\Client.API\\Client.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pmd.SL\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.9\\microsoft.aspnet.webapi.client.5.2.9.nupkg.sha512",
     "C:\\Users\\pmd.SL\\.nuget\\packages\\microsoft.aspnet.webapi.core\\5.2.9\\microsoft.aspnet.webapi.core.5.2.9.nupkg.sha512",

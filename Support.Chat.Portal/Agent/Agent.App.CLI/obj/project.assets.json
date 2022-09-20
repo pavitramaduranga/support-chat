@@ -120,11 +120,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\pmd.SL\\Documents\\Lab\\Malta\\Source\\Support.Chat.Portal\\Agent\\Agent.App.CLI\\Agent.App.CLI.csproj",
+      "projectUniqueName": "C:\\Users\\pmd.SL\\Documents\\Lab\\Malta\\Source\\support-chat\\Support.Chat.Portal\\Agent\\Agent.App.CLI\\Agent.App.CLI.csproj",
       "projectName": "Agent.App.CLI",
-      "projectPath": "C:\\Users\\pmd.SL\\Documents\\Lab\\Malta\\Source\\Support.Chat.Portal\\Agent\\Agent.App.CLI\\Agent.App.CLI.csproj",
+      "projectPath": "C:\\Users\\pmd.SL\\Documents\\Lab\\Malta\\Source\\support-chat\\Support.Chat.Portal\\Agent\\Agent.App.CLI\\Agent.App.CLI.csproj",
       "packagesPath": "C:\\Users\\pmd.SL\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\pmd.SL\\Documents\\Lab\\Malta\\Source\\Support.Chat.Portal\\Agent\\Agent.App.CLI\\obj\\",
+      "outputPath": "C:\\Users\\pmd.SL\\Documents\\Lab\\Malta\\Source\\support-chat\\Support.Chat.Portal\\Agent\\Agent.App.CLI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

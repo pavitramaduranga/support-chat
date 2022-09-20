@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "yDdxTecY0dngTjB3PHKiALgCX0aKU3p2EnX4bKAPwSdRgPHm3K26y1oElrg5j68IGcgWfWJFHeBJk1O6Zf6CCw==",
+  "dgSpecHash": "DxHn2j/Dv3dr7aYCdRu+BviSc5jz+V47eh0bT8/Iw0wyqocBoOJ3fKj2hGZIFW1P233sp9ELl2e/jtIOrMkMHw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\pmd.SL\\Documents\\Lab\\Malta\\Source\\Support.Chat.Portal\\Agent\\Agent.App.CLI\\Agent.App.CLI.csproj",
+  "projectFilePath": "C:\\Users\\pmd.SL\\Documents\\Lab\\Malta\\Source\\support-chat\\Support.Chat.Portal\\Agent\\Agent.App.CLI\\Agent.App.CLI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pmd.SL\\.nuget\\packages\\rabbitmq.client\\6.4.0\\rabbitmq.client.6.4.0.nupkg.sha512",
     "C:\\Users\\pmd.SL\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",

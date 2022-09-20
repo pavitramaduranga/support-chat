@@ -10,3 +10,15 @@ C:\Users\pmd.SL\Documents\Lab\Malta\Source\Support.Chat.Portal\API\Client.API.Se
 C:\Users\pmd.SL\Documents\Lab\Malta\Source\Support.Chat.Portal\API\Client.API.Services\obj\Debug\net6.0\refint\Client.API.Services.dll
 C:\Users\pmd.SL\Documents\Lab\Malta\Source\Support.Chat.Portal\API\Client.API.Services\obj\Debug\net6.0\Client.API.Services.pdb
 C:\Users\pmd.SL\Documents\Lab\Malta\Source\Support.Chat.Portal\API\Client.API.Services\obj\Debug\net6.0\ref\Client.API.Services.dll
+C:\Users\pmd.SL\Documents\Lab\Malta\Source\support-chat\Support.Chat.Portal\API\Client.API.Services\bin\Debug\net6.0\Client.API.Services.deps.json
+C:\Users\pmd.SL\Documents\Lab\Malta\Source\support-chat\Support.Chat.Portal\API\Client.API.Services\bin\Debug\net6.0\Client.API.Services.dll
+C:\Users\pmd.SL\Documents\Lab\Malta\Source\support-chat\Support.Chat.Portal\API\Client.API.Services\bin\Debug\net6.0\Client.API.Services.pdb
+C:\Users\pmd.SL\Documents\Lab\Malta\Source\support-chat\Support.Chat.Portal\API\Client.API.Services\obj\Debug\net6.0\Client.API.Services.csproj.AssemblyReference.cache
+C:\Users\pmd.SL\Documents\Lab\Malta\Source\support-chat\Support.Chat.Portal\API\Client.API.Services\obj\Debug\net6.0\Client.API.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pmd.SL\Documents\Lab\Malta\Source\support-chat\Support.Chat.Portal\API\Client.API.Services\obj\Debug\net6.0\Client.API.Services.AssemblyInfoInputs.cache
+C:\Users\pmd.SL\Documents\Lab\Malta\Source\support-chat\Support.Chat.Portal\API\Client.API.Services\obj\Debug\net6.0\Client.API.Services.AssemblyInfo.cs
+C:\Users\pmd.SL\Documents\Lab\Malta\Source\support-chat\Support.Chat.Portal\API\Client.API.Services\obj\Debug\net6.0\Client.API.Services.csproj.CoreCompileInputs.cache
+C:\Users\pmd.SL\Documents\Lab\Malta\Source\support-chat\Support.Chat.Portal\API\Client.API.Services\obj\Debug\net6.0\Client.API.Services.dll
+C:\Users\pmd.SL\Documents\Lab\Malta\Source\support-chat\Support.Chat.Portal\API\Client.API.Services\obj\Debug\net6.0\refint\Client.API.Services.dll
+C:\Users\pmd.SL\Documents\Lab\Malta\Source\support-chat\Support.Chat.Portal\API\Client.API.Services\obj\Debug\net6.0\Client.API.Services.pdb
+C:\Users\pmd.SL\Documents\Lab\Malta\Source\support-chat\Support.Chat.Portal\API\Client.API.Services\obj\Debug\net6.0\ref\Client.API.Services.dll

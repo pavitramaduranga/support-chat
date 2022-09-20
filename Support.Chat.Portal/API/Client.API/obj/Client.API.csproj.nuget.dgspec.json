@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\pmd.SL\\Documents\\Lab\\Malta\\Source\\Support.Chat.Portal\\API\\Client.API\\Client.API.csproj": {}
+    "C:\\Users\\pmd.SL\\Documents\\Lab\\Malta\\Source\\support-chat\\Support.Chat.Portal\\API\\Client.API\\Client.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\pmd.SL\\Documents\\Lab\\Malta\\Source\\Support.Chat.Portal\\API\\Client.API.Services\\Client.API.Services.csproj": {
+    "C:\\Users\\pmd.SL\\Documents\\Lab\\Malta\\Source\\support-chat\\Support.Chat.Portal\\API\\Client.API.Services\\Client.API.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pmd.SL\\Documents\\Lab\\Malta\\Source\\Support.Chat.Portal\\API\\Client.API.Services\\Client.API.Services.csproj",
+        "projectUniqueName": "C:\\Users\\pmd.SL\\Documents\\Lab\\Malta\\Source\\support-chat\\Support.Chat.Portal\\API\\Client.API.Services\\Client.API.Services.csproj",
         "projectName": "Client.API.Services",
-        "projectPath": "C:\\Users\\pmd.SL\\Documents\\Lab\\Malta\\Source\\Support.Chat.Portal\\API\\Client.API.Services\\Client.API.Services.csproj",
+        "projectPath": "C:\\Users\\pmd.SL\\Documents\\Lab\\Malta\\Source\\support-chat\\Support.Chat.Portal\\API\\Client.API.Services\\Client.API.Services.csproj",
         "packagesPath": "C:\\Users\\pmd.SL\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pmd.SL\\Documents\\Lab\\Malta\\Source\\Support.Chat.Portal\\API\\Client.API.Services\\obj\\",
+        "outputPath": "C:\\Users\\pmd.SL\\Documents\\Lab\\Malta\\Source\\support-chat\\Support.Chat.Portal\\API\\Client.API.Services\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -69,14 +69,14 @@
         }
       }
     },
-    "C:\\Users\\pmd.SL\\Documents\\Lab\\Malta\\Source\\Support.Chat.Portal\\API\\Client.API\\Client.API.csproj": {
+    "C:\\Users\\pmd.SL\\Documents\\Lab\\Malta\\Source\\support-chat\\Support.Chat.Portal\\API\\Client.API\\Client.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pmd.SL\\Documents\\Lab\\Malta\\Source\\Support.Chat.Portal\\API\\Client.API\\Client.API.csproj",
+        "projectUniqueName": "C:\\Users\\pmd.SL\\Documents\\Lab\\Malta\\Source\\support-chat\\Support.Chat.Portal\\API\\Client.API\\Client.API.csproj",
         "projectName": "Client.API",
-        "projectPath": "C:\\Users\\pmd.SL\\Documents\\Lab\\Malta\\Source\\Support.Chat.Portal\\API\\Client.API\\Client.API.csproj",
+        "projectPath": "C:\\Users\\pmd.SL\\Documents\\Lab\\Malta\\Source\\support-chat\\Support.Chat.Portal\\API\\Client.API\\Client.API.csproj",
         "packagesPath": "C:\\Users\\pmd.SL\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pmd.SL\\Documents\\Lab\\Malta\\Source\\Support.Chat.Portal\\API\\Client.API\\obj\\",
+        "outputPath": "C:\\Users\\pmd.SL\\Documents\\Lab\\Malta\\Source\\support-chat\\Support.Chat.Portal\\API\\Client.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -97,8 +97,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\pmd.SL\\Documents\\Lab\\Malta\\Source\\Support.Chat.Portal\\API\\Client.API.Services\\Client.API.Services.csproj": {
-                "projectPath": "C:\\Users\\pmd.SL\\Documents\\Lab\\Malta\\Source\\Support.Chat.Portal\\API\\Client.API.Services\\Client.API.Services.csproj"
+              "C:\\Users\\pmd.SL\\Documents\\Lab\\Malta\\Source\\support-chat\\Support.Chat.Portal\\API\\Client.API.Services\\Client.API.Services.csproj": {
+                "projectPath": "C:\\Users\\pmd.SL\\Documents\\Lab\\Malta\\Source\\support-chat\\Support.Chat.Portal\\API\\Client.API.Services\\Client.API.Services.csproj"
               }
             }
           }

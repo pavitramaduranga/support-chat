@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\pmd.SL\\Documents\\Lab\\Malta\\Source\\Support.Chat.Portal\\Client\\Client.App.CLI\\Client.App.CLI.csproj",
+      "projectUniqueName": "C:\\Users\\pmd.SL\\Documents\\Lab\\Malta\\Source\\support-chat\\Support.Chat.Portal\\Client\\Client.App.CLI\\Client.App.CLI.csproj",
       "projectName": "Client.App.CLI",
-      "projectPath": "C:\\Users\\pmd.SL\\Documents\\Lab\\Malta\\Source\\Support.Chat.Portal\\Client\\Client.App.CLI\\Client.App.CLI.csproj",
+      "projectPath": "C:\\Users\\pmd.SL\\Documents\\Lab\\Malta\\Source\\support-chat\\Support.Chat.Portal\\Client\\Client.App.CLI\\Client.App.CLI.csproj",
       "packagesPath": "C:\\Users\\pmd.SL\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\pmd.SL\\Documents\\Lab\\Malta\\Source\\Support.Chat.Portal\\Client\\Client.App.CLI\\obj\\",
+      "outputPath": "C:\\Users\\pmd.SL\\Documents\\Lab\\Malta\\Source\\support-chat\\Support.Chat.Portal\\Client\\Client.App.CLI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
