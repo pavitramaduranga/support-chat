@@ -28,7 +28,7 @@ In the Visual Studio Package Manager Console, select the AgentCoordication.CLI a
 Initial data is added with the seed method.<br>
 To explore the SqlLite DB use https://sqlitebrowser.org/dl/.<br>
 
-Below is the project structure :
+<b>Project Structure</b>
 <br>
 
 ![image](https://user-images.githubusercontent.com/4363523/191039409-9d94f75a-4265-4305-b78d-e20287d05743.png)
