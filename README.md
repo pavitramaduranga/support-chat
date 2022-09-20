@@ -1,6 +1,12 @@
 # support-chat
 Application demonstrate the Rabbbit MQ usage.
 
+User the below command to download the docker image for RabbitMQ
+docker run --rm -it -p 15672:15672 -p 5672:5672 rabbitmq:3-management
+
+On successful completion visit url http://localhost:15672/. This is the RabbitMQ management portal.
+Default username and password both is set to 'guest'
+
 Below is the project structure :
 <br>
 
