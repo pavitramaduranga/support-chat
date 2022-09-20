@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "AgentCoordination.CLI": {
+      "commandName": "Project",
+      "workingDirectory": "C:\\\\Users\\\\pmd.SL\\\\Documents\\\\Lab\\\\Malta\\\\Source\\\\support-chat\\\\Support.Chat.Portal\\\\AgentCoordination\\\\AgentCoordination.CLI"
+    }
+  }
+}

@@ -68,6 +68,14 @@ using (var channel = connection.CreateModel())
 
 void PublishToChatAgents(string v)
 {
+    //Get shift
+    //Get Capacity for each seniority level (shift)
+    //get active sessions for each level
+    //each level active session < capacity
+        //add to que
+    //save session request
+
+
     var factory = new ConnectionFactory() { HostName = "localhost" };
     using (var connection = factory.CreateConnection())
     using (var channel = connection.CreateModel())
