@@ -15,6 +15,7 @@
 *.sln.docstates
 *.cache
 *.editorconfig
+*.sentinel
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
