@@ -1,6 +1,9 @@
 # support-chat
 Application demonstrate the Rabbbit MQ usage.
 
+# Solution Setup
+
+<b>RabbitMQ Configuration</b>
 User the below command to download the docker image for RabbitMQ 
 <br>
 docker run --rm -it -p 15672:15672 -p 5672:5672 rabbitmq:3-management
@@ -11,6 +14,14 @@ Default username and password both is set to 'guest'
 
 ![image](https://user-images.githubusercontent.com/4363523/191338791-dd746f68-e212-4dba-9e13-a0963462aaa1.png)
 
+<b>DB Configuration</b>
+In the Visual Studio Package Manager Console, select the AgentCoordication.CLI and run the below commands :
+
+<ul>
+<li>Install-Package Microsoft.EntityFrameworkCore.Tools</li>
+<li>Add-Migration InitialCreate</li>
+<li>Update-Database</li>
+</ul>
 
 Below is the project structure :
 <br>
