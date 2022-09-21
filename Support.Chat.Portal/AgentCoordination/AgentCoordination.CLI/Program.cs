@@ -4,26 +4,31 @@ using RabbitMQ.Client.Events;
 using System.Text;
 using System.Linq;
 using AgentCoordination.CLI;
+using Support.Chat.Portal.Common.Models;
+using Support.Chat.Portal.Common.DTO;
 
 Console.WriteLine("Agent Coordination CLI");
 
 
 #region Agent Que Initiator
 
-AgentQueInitiatorService agentQueInitiator = new AgentQueInitiatorService();
-agentQueInitiator.InitializeAgentQues();
+AgentService agentService = new AgentService();
+AgentCapacityPerShift agentCapacityPerShift = agentService.GetAgentCapacityPerShift(Shift.OfficeTime);
+
+AgentQueInitiatorService agentQueInitiator = new();
+agentQueInitiator.InitializeAgentQueues(agentCapacityPerShift);
 
 #endregion
 
-#region Listner to the session que
+#region Listner to the session queue
 
-agentQueInitiator.InitializeQue("TASK_QUEUE", 1000);
+//get the que size 
+agentQueInitiator.InitializeQueues("TASK_QUEUE", 3);
 
 var factory = new ConnectionFactory() { HostName = "localhost" };
 using (var connection = factory.CreateConnection())
 using (var channel = connection.CreateModel())
 {
- 
 
     Console.WriteLine(" [*] Waiting for messages.");
 
@@ -35,11 +40,9 @@ using (var channel = connection.CreateModel())
         Console.WriteLine(" [x] Received {0}", message);
 
         //Publish to agents
-        PublishToChatAgents(message);
+        PublishToChatAgents(agentCapacityPerShift, message);
         Console.WriteLine(" [x] Connected");
 
-        // Note: it is possible to access the channel via
-        //       ((EventingBasicConsumer)sender).Model here
         channel.BasicAck(deliveryTag: ea.DeliveryTag, multiple: false);
     };
     channel.BasicConsume(queue: "TASK_QUEUE",
@@ -51,26 +54,45 @@ using (var channel = connection.CreateModel())
 }
 
 
-void PublishToChatAgents(string v)
+void PublishToChatAgents(AgentCapacityPerShift agentCapacityPerShift, string message)
 {
 
     //Get shift
     //Get Capacity for each seniority level (shift)//
     //get active sessions for each level//
-    //each level active session < capacity
-    //add to que
-    //save session request
+    //each level active session < capacity//
+    //add to que//
 
     var factory = new ConnectionFactory() { HostName = "localhost" };
     using (var connection = factory.CreateConnection())
     using (var channel = connection.CreateModel())
     {
 
-        var body = Encoding.UTF8.GetBytes(v);
+        var body = Encoding.UTF8.GetBytes(message);
 
         var properties = channel.CreateBasicProperties();
         properties.Persistent = true;
 
-        channel.BasicPublish(exchange: "", routingKey: "JUNIOR", basicProperties: properties, body: body);
+        int x = (int)channel.MessageCount("JUNIOR");
+        if ((int)channel.MessageCount("JUNIOR") < agentCapacityPerShift.JuniorCapacity)
+        {
+            channel.BasicPublish(exchange: "", routingKey: "JUNIOR", basicProperties: properties, body: body);
+        }
+        else if ((int)channel.MessageCount("MIDLEVEL") < agentCapacityPerShift.MidLevelCapacity)
+        {
+            channel.BasicPublish(exchange: "", routingKey: "MIDLEVEL", basicProperties: properties, body: body);
+        }
+        else if ((int)channel.MessageCount("SENIOR") < agentCapacityPerShift.SeniorCapacity)
+        {
+            channel.BasicPublish(exchange: "", routingKey: "SENIOR", basicProperties: properties, body: body);
+        }
+        else if ((int)channel.MessageCount("TEAMLEAD") < agentCapacityPerShift.TeamLeadCapacity)
+        {
+            channel.BasicPublish(exchange: "", routingKey: "TEAMLEAD", basicProperties: properties, body: body);
+        }
+        else if ((int)channel.MessageCount("OVERFLOW") < agentCapacityPerShift.OverFlowCapacity)
+        {
+            channel.BasicPublish(exchange: "", routingKey: "OVERFLOW", basicProperties: properties, body: body);
+        }
     }
 }

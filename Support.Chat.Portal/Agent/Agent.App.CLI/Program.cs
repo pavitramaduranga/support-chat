@@ -1,5 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-using RabbitMQ.Client;
+﻿using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
 using System.Text;
 
@@ -9,6 +8,7 @@ Console.WriteLine("Press 1 for Junior Level");
 Console.WriteLine("Press 2 for Mid Level");
 Console.WriteLine("Press 3 for Senior Level");
 Console.WriteLine("Press 4 for TeamLead Level");
+Console.WriteLine("Press 5 for OverFlow Level");
 
 string agentLevel = Console.ReadLine();
 string queName = string.Empty;
@@ -30,7 +30,10 @@ switch (agentLevel)
         queName = "TeamLead";
         Console.WriteLine("Logged in as TeamLead Level");
         break;
-
+    case "5":
+        queName = "OverFlow";
+        Console.WriteLine("Logged in as OverFlow Level");
+        break;
     default:
         Console.WriteLine("Invalid agent level");
         break;
@@ -48,12 +51,9 @@ using (var channel = connection.CreateModel())
         var body = ea.Body.ToArray();
         var message = Encoding.UTF8.GetString(body);
         Console.WriteLine(" [x] Connected {0}", message);
-        Thread.Sleep(10 * 1000);
-
+        Thread.Sleep(2000);
         Console.WriteLine(" [x] Agent closed the chat");
 
-        // Note: it is possible to access the channel via
-        //       ((EventingBasicConsumer)sender).Model here
         channel.BasicAck(deliveryTag: ea.DeliveryTag, multiple: false);
     };
     channel.BasicConsume(queue: queName.ToUpper(),
