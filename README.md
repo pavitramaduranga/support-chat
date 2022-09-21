@@ -15,11 +15,11 @@ Application demonstrate the Rabbbit MQ usage.
 </br>
 Use the below command to pull the docker image for RabbitMQ 
 <br>
-docker pull rabbitmq:3-management
+<i>docker pull rabbitmq:3-management</i>
 </br>
 Use the below command to run the docker image. This will map mort 15672 for the management web app and port 5672 for the message broker. 
 <br>
-docker run --rm -it -p 15672:15672 -p 5672:5672 rabbitmq:3-management
+<i>docker run --rm -it -p 15672:15672 -p 5672:5672 rabbitmq:3-management</i>
 
 On successful completion visit url http://localhost:15672/. This is the RabbitMQ management portal.
 Default username and password both is set to 'guest'
