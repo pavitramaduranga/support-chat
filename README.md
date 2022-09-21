@@ -54,3 +54,9 @@ This is to set the path of the SQLLite DB.
 <li>Agent.App.CLI - demonstrate the support chat agent</li>
 </ul>
 
+##Testing
+
+Below is how the load will be balanced during an office hour. (Assuming all clients are busy)
+
+<br>
+![image](https://user-images.githubusercontent.com/4363523/191621217-075f4871-3865-4c5b-acac-9d73893e6ec6.png)
