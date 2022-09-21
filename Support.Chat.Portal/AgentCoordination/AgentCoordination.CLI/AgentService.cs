@@ -50,7 +50,7 @@ namespace AgentCoordination.CLI
                     agentCapacityPerShift.TeamLeadCapacity = Convert.ToInt32(Math.Floor(Convert.ToDouble(teamLeadlData?.Efficiency * MaxConcurrentCount))) * teamLeadAgents.Count();
                 }
 
-                var overFlowAgents = availableAgents?.Select(x => x.SeniorityId == 5);
+                var overFlowAgents = availableAgents?.Select(x => x.SeniorityId == 1);
                 if (overFlowAgents?.Count() > 0)
                 {
                     var overFlowLevelData = seniorities.FirstOrDefault(x => x.Name == "OverFlow");
