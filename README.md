@@ -44,7 +44,7 @@ To explore the SqlLite DB use https://sqlitebrowser.org/dl/.<br>
 Right click on the AgentCoordication.CLI. Go to properties and then click debug. Browse and set the working directory to the project folder.
 This is to set the path of the SQLLite DB.
 <br>
-<b>Project Structure</b>
+### Project Structure
 <br>
 
 ![image](https://user-images.githubusercontent.com/4363523/191039409-9d94f75a-4265-4305-b78d-e20287d05743.png)
