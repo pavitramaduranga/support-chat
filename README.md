@@ -1,7 +1,7 @@
 # Support chat portal
 Application demonstrate the Rabbbit MQ usage.
 
-# Tech Stack
+## Tech Stack
 
 <ul>
 <li>.Net 6</li>
@@ -10,7 +10,7 @@ Application demonstrate the Rabbbit MQ usage.
 <li>Docker</li>
 </ul>
 
-# Solution Setup
+## Solution Setup
 
 <b>RabbitMQ Configuration</b>
 </br>
