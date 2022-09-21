@@ -1,11 +1,23 @@
 # support-chat
 Application demonstrate the Rabbbit MQ usage.
 
+# Tech Stack
+
+<ul>
+<li>.Net 6</li>
+<li>RabbitMQ</li>
+<li>SqlLite DB</li>
+</ul>
+
 # Solution Setup
 
 <b>RabbitMQ Configuration</b>
 </br>
-User the below command to download the docker image for RabbitMQ 
+Use the below command to pull the docker image for RabbitMQ 
+<br>
+docker pull rabbitmq:3-management
+</br>
+Use the below command to run the docker image. This will map mort 15672 for the management web app and port 5672 for the message broker. 
 <br>
 docker run --rm -it -p 15672:15672 -p 5672:5672 rabbitmq:3-management
 
