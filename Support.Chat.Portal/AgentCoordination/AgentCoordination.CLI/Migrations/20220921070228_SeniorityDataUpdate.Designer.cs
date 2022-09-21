@@ -3,6 +3,7 @@ using System;
 using AgentCoordination.CLI.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AgentCoordination.CLI.Migrations
 {
     [DbContext(typeof(CoordinatorDbContext))]
-    partial class CoordinatorDbContextModelSnapshot : ModelSnapshot
+    [Migration("20220921070228_SeniorityDataUpdate")]
+    partial class SeniorityDataUpdate
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "7.0.0-rc.1.22426.7");

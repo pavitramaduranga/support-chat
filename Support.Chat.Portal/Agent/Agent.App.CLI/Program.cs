@@ -8,15 +8,6 @@ var factory = new ConnectionFactory() { HostName = "localhost" };
 using (var connection = factory.CreateConnection())
 using (var channel = connection.CreateModel())
 {
-    channel.QueueDeclare(queue: "task_queue_agent",
-                         durable: true,
-                         exclusive: false,
-                         autoDelete: false,
-                         arguments: null
-                         );
-
-    channel.BasicQos(prefetchSize: 0, prefetchCount: 1, global: false);
-
     Console.WriteLine(" [-] Waiting for messages.");
 
     var consumer = new EventingBasicConsumer(channel);
@@ -35,7 +26,7 @@ using (var channel = connection.CreateModel())
         //       ((EventingBasicConsumer)sender).Model here
         channel.BasicAck(deliveryTag: ea.DeliveryTag, multiple: false);
     };
-    channel.BasicConsume(queue: "task_queue_agent",
+    channel.BasicConsume(queue: "JUNIOR",
                          autoAck: false,
                          consumer: consumer);
 

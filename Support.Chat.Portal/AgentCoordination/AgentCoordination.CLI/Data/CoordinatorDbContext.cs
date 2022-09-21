@@ -26,9 +26,9 @@ namespace AgentCoordination.CLI.Data
             modelBuilder.Entity<Seniority>()
             .HasData(
                 new Seniority { Id = 1, Efficiency = 0.4, Name = "Junior" },
-                new Seniority { Id = 2, Efficiency = 0.6, Name = " Mid-Level" },
+                new Seniority { Id = 2, Efficiency = 0.6, Name = "MidLevel" },
                 new Seniority { Id = 3, Efficiency = 0.8, Name = "Senior" },
-                new Seniority { Id = 4, Efficiency = 0.5, Name = "Tem Lead" }
+                new Seniority { Id = 4, Efficiency = 0.5, Name = "TeamLead" }
                 );
 
 

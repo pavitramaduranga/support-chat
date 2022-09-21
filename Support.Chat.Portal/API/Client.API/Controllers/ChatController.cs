@@ -21,10 +21,6 @@ namespace Client.API.Controllers
             SessionQueService ss = new();
             ss.PublishMessage(useremail);
             return "Chat Client connected";
-
-
         }
-
-
     }
 }
