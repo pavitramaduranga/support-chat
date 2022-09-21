@@ -68,5 +68,6 @@ This is to set the path of the SQLLite DB.
 Below is how the load will be balanced during an office hour. (Assuming all clients are busy)
 
 <br>
+
 ![image](https://user-images.githubusercontent.com/4363523/191621286-c22821e1-5725-4706-8ae4-bcd10e146d77.png)
 
