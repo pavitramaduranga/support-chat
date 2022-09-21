@@ -1,7 +1,7 @@
 # Support chat portal
 Application demonstrate the Rabbbit MQ usage.
 
-# Tech Stack
+## Tech Stack
 
 <ul>
 <li>.Net 6</li>
@@ -10,7 +10,7 @@ Application demonstrate the Rabbbit MQ usage.
 <li>Docker</li>
 </ul>
 
-# Solution Setup
+## Solution Setup
 
 <b>RabbitMQ Configuration</b>
 </br>
@@ -48,7 +48,7 @@ This is to set the path of the SQLLite DB.
 <br>
 
 ![image](https://user-images.githubusercontent.com/4363523/191039409-9d94f75a-4265-4305-b78d-e20287d05743.png)
-
+<br>
 <ul>
 <li>Client.App.CLI - demonstrate the chat client</li>
 <li>Agent.App.CLI - demonstrate the support chat agent</li>
