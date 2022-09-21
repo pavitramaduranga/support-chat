@@ -12,6 +12,7 @@ Console.WriteLine("Agent Coordination CLI");
 
 AgentService agentService = new AgentService();
 AgentCapacityPerShift agentCapacityPerShift = agentService.GetAgentCapacityPerShift(Shift.OfficeTime);
+int totalCapacityOfTheShift = agentService.GetAgentCapacityPerShift(agentCapacityPerShift);
 
 AgentQueInitiatorService agentQueInitiator = new();
 agentQueInitiator.InitializeAgentQueues(agentCapacityPerShift);
@@ -20,8 +21,7 @@ agentQueInitiator.InitializeAgentQueues(agentCapacityPerShift);
 
 #region Listner to the session queue
 
-//get the que size 
-agentQueInitiator.InitializeQueues("TASK_QUEUE", 3);
+agentQueInitiator.InitializeQueues("TASK_QUEUE", totalCapacityOfTheShift);
 
 var factory = new ConnectionFactory() { HostName = "localhost" };
 using (var connection = factory.CreateConnection())
@@ -43,24 +43,16 @@ using (var channel = connection.CreateModel())
 
         channel.BasicAck(deliveryTag: ea.DeliveryTag, multiple: false);
     };
-    channel.BasicConsume(queue: "TASK_QUEUE",
-                         autoAck: false,
-                         consumer: consumer);
-    #endregion
-    Console.WriteLine(" Press [enter] to exit.");
-    Console.ReadLine();
+    channel.BasicConsume(queue: "TASK_QUEUE", autoAck: false, consumer: consumer);
 }
+#endregion
+
+Console.WriteLine(" Press enter to exit.");
+Console.ReadLine();
 
 
 void PublishToChatAgents(AgentCapacityPerShift agentCapacityPerShift, string message)
 {
-
-    //Get shift
-    //Get Capacity for each seniority level (shift)//
-    //get active sessions for each level//
-    //each level active session < capacity//
-    //add to que//
-
     var factory = new ConnectionFactory() { HostName = "localhost" };
     using (var connection = factory.CreateConnection())
     using (var channel = connection.CreateModel())
@@ -71,24 +63,24 @@ void PublishToChatAgents(AgentCapacityPerShift agentCapacityPerShift, string mes
         var properties = channel.CreateBasicProperties();
         properties.Persistent = true;
 
-        int x = (int)channel.MessageCount("JUNIOR");
-        if ((int)channel.MessageCount("JUNIOR") < agentCapacityPerShift.JuniorCapacity)
+        if (agentCapacityPerShift.JuniorCapacity != 0 && (int)channel.MessageCount("JUNIOR") < agentCapacityPerShift.JuniorCapacity)
         {
             channel.BasicPublish(exchange: "", routingKey: "JUNIOR", basicProperties: properties, body: body);
         }
-        else if ((int)channel.MessageCount("MIDLEVEL") < agentCapacityPerShift.MidLevelCapacity)
+        else if (agentCapacityPerShift.MidLevelCapacity != 0 && (int)channel.MessageCount("MIDLEVEL") < agentCapacityPerShift.MidLevelCapacity)
         {
             channel.BasicPublish(exchange: "", routingKey: "MIDLEVEL", basicProperties: properties, body: body);
         }
-        else if ((int)channel.MessageCount("SENIOR") < agentCapacityPerShift.SeniorCapacity)
+        else if (agentCapacityPerShift.SeniorCapacity != 0 && (int)channel.MessageCount("SENIOR") < agentCapacityPerShift.SeniorCapacity)
         {
             channel.BasicPublish(exchange: "", routingKey: "SENIOR", basicProperties: properties, body: body);
         }
-        else if ((int)channel.MessageCount("TEAMLEAD") < agentCapacityPerShift.TeamLeadCapacity)
+        else if (agentCapacityPerShift.TeamLeadCapacity != 0 && (int)channel.MessageCount("TEAMLEAD") < agentCapacityPerShift.TeamLeadCapacity)
         {
             channel.BasicPublish(exchange: "", routingKey: "TEAMLEAD", basicProperties: properties, body: body);
         }
-        else if ((int)channel.MessageCount("OVERFLOW") < agentCapacityPerShift.OverFlowCapacity)
+        //TODO :: only applicable to office hours shift
+        else if (agentCapacityPerShift.OverFlowCapacity != 0 && (int)channel.MessageCount("OVERFLOW") < agentCapacityPerShift.OverFlowCapacity)
         {
             channel.BasicPublish(exchange: "", routingKey: "OVERFLOW", basicProperties: properties, body: body);
         }

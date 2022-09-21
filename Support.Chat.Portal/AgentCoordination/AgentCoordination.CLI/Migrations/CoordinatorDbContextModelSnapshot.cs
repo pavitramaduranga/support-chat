@@ -39,7 +39,7 @@ namespace AgentCoordination.CLI.Migrations
 
                     b.HasIndex("TeamId");
 
-                    b.ToTable("Agents");
+                    b.ToTable("Agents", (string)null);
 
                     b.HasData(
                         new
@@ -174,7 +174,7 @@ namespace AgentCoordination.CLI.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Seniorities");
+                    b.ToTable("Seniorities", (string)null);
 
                     b.HasData(
                         new
@@ -236,7 +236,7 @@ namespace AgentCoordination.CLI.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("SupportRequests");
+                    b.ToTable("SupportRequests", (string)null);
                 });
 
             modelBuilder.Entity("Support.Chat.Portal.Common.Models.Team", b =>
@@ -257,7 +257,7 @@ namespace AgentCoordination.CLI.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Teams");
+                    b.ToTable("Teams", (string)null);
 
                     b.HasData(
                         new

@@ -1,4 +1,5 @@
 ﻿using System.Text;
+using System.Threading.Channels;
 using RabbitMQ.Client;
 
 namespace Client.API.Services
@@ -8,43 +9,16 @@ namespace Client.API.Services
         public void PublishMessage(string message)
         {
 
-            //var factory = new ConnectionFactory() { HostName = "localhost" };
-            //using (var connection = factory.CreateConnection())
-
-            //using (var channel = connection.CreateModel())
-            //{
-                //var queueCount = channel.MessageCount("task_queue");
-
-                //supportRequest.User = i.ToString();
-                //supportRequest.Id = Guid.NewGuid();
-                //var supportCreatedMessage = new SupportRequestCreatedMessage()
-                //{
-                //    MessageId = Guid.NewGuid(),
-                //    SupportRequest = supportRequest,
-                //    CreatedDate = DateTime.UtcNow
-                //};
-
-                //var json = JsonConvert.SerializeObject(supportCreatedMessage);
-                //var body = Encoding.UTF8.GetBytes(json);
-               // var body = Encoding.UTF8.GetBytes(message);
-               // channel.BasicPublish(exchange: "", routingKey: "TASK_QUEUE", basicProperties: null, body: body);
-
-            //}
-
             var factory = new ConnectionFactory() { HostName = "localhost" };
             using (var connection = factory.CreateConnection())
             using (var channel = connection.CreateModel())
             {
-
                 var body = Encoding.UTF8.GetBytes(message);
-
                 var properties = channel.CreateBasicProperties();
                 properties.Persistent = true;
 
                 channel.BasicPublish(exchange: "", routingKey: "TASK_QUEUE", basicProperties: properties, body: body);
             }
-
         }
-
     }
 }
