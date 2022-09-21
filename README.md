@@ -12,7 +12,7 @@ Application demonstrate the Rabbbit MQ usage.
 
 ## Solution Setup
 
-<b>RabbitMQ Configuration</b>
+### RabbitMQ Configuration
 </br>
 Use the below command to pull the docker image for RabbitMQ 
 <br>
@@ -28,7 +28,7 @@ Default username and password both is set to 'guest'
 
 ![image](https://user-images.githubusercontent.com/4363523/191338791-dd746f68-e212-4dba-9e13-a0963462aaa1.png)
 
-<b>DB Configuration</b>
+### DB Configuration
 </br>
 In the Visual Studio Package Manager Console, select the AgentCoordication.CLI and run the below commands :
 
