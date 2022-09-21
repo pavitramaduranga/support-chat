@@ -8,11 +8,11 @@ namespace Client.API.Services
         public void PublishMessage(string message)
         {
 
-            var factory = new ConnectionFactory() { HostName = "localhost" };
-            using (var connection = factory.CreateConnection())
+            //var factory = new ConnectionFactory() { HostName = "localhost" };
+            //using (var connection = factory.CreateConnection())
 
-            using (var channel = connection.CreateModel())
-            {
+            //using (var channel = connection.CreateModel())
+            //{
                 //var queueCount = channel.MessageCount("task_queue");
 
                 //supportRequest.User = i.ToString();
@@ -26,9 +26,22 @@ namespace Client.API.Services
 
                 //var json = JsonConvert.SerializeObject(supportCreatedMessage);
                 //var body = Encoding.UTF8.GetBytes(json);
-                var body = Encoding.UTF8.GetBytes(message);
-                channel.BasicPublish(exchange: "", routingKey: "task_queue", basicProperties: null, body: body);
+               // var body = Encoding.UTF8.GetBytes(message);
+               // channel.BasicPublish(exchange: "", routingKey: "TASK_QUEUE", basicProperties: null, body: body);
 
+            //}
+
+            var factory = new ConnectionFactory() { HostName = "localhost" };
+            using (var connection = factory.CreateConnection())
+            using (var channel = connection.CreateModel())
+            {
+
+                var body = Encoding.UTF8.GetBytes(message);
+
+                var properties = channel.CreateBasicProperties();
+                properties.Persistent = true;
+
+                channel.BasicPublish(exchange: "", routingKey: "TASK_QUEUE", basicProperties: properties, body: body);
             }
 
         }

@@ -8,53 +8,48 @@ using AgentCoordination.CLI;
 Console.WriteLine("Agent Coordination CLI");
 
 
-    #region Agent Que Initiator
+#region Agent Que Initiator
 
-    AgentQueInitiatorService agentQueInitiator = new AgentQueInitiatorService();
-    agentQueInitiator.InitializeAgentQues();
+AgentQueInitiatorService agentQueInitiator = new AgentQueInitiatorService();
+agentQueInitiator.InitializeAgentQues();
 
-    #endregion
+#endregion
 
-    #region Listner to the session que
-    var factory = new ConnectionFactory() { HostName = "localhost" };
-    using (var connection = factory.CreateConnection())
-    using (var channel = connection.CreateModel())
+#region Listner to the session que
+
+agentQueInitiator.InitializeQue("TASK_QUEUE", 1000);
+
+var factory = new ConnectionFactory() { HostName = "localhost" };
+using (var connection = factory.CreateConnection())
+using (var channel = connection.CreateModel())
+{
+ 
+
+    Console.WriteLine(" [*] Waiting for messages.");
+
+    var consumer = new EventingBasicConsumer(channel);
+    consumer.Received += (sender, ea) =>
     {
-        channel.QueueDeclare(queue: "task_queue",
-                             durable: true,
-                             exclusive: false,
-                             autoDelete: false,
-                             arguments: null
-                             );
+        var body = ea.Body.ToArray();
+        var message = Encoding.UTF8.GetString(body);
+        Console.WriteLine(" [x] Received {0}", message);
 
-        channel.BasicQos(prefetchSize: 0, prefetchCount: 1, global: false);
+        //Publish to agents
+        PublishToChatAgents(message);
+        Console.WriteLine(" [x] Connected");
 
-        Console.WriteLine(" [*] Waiting for messages.");
-
-        var consumer = new EventingBasicConsumer(channel);
-        consumer.Received += (sender, ea) => 
-        {
-            var body = ea.Body.ToArray();
-            var message = Encoding.UTF8.GetString(body);
-            Console.WriteLine(" [x] Received {0}", message);
-
-            //Publish to agents
-            PublishToChatAgents(message);
-            Console.WriteLine(" [x] Connected");
-
-            // Note: it is possible to access the channel via
-            //       ((EventingBasicConsumer)sender).Model here
-            channel.BasicAck(deliveryTag: ea.DeliveryTag, multiple: false);
-        };
-        channel.BasicConsume(queue: "task_queue",
-                             autoAck: false,
-                             consumer: consumer);
+        // Note: it is possible to access the channel via
+        //       ((EventingBasicConsumer)sender).Model here
+        channel.BasicAck(deliveryTag: ea.DeliveryTag, multiple: false);
+    };
+    channel.BasicConsume(queue: "TASK_QUEUE",
+                         autoAck: false,
+                         consumer: consumer);
     #endregion
-
     Console.WriteLine(" Press [enter] to exit.");
     Console.ReadLine();
-
 }
+
 
 void PublishToChatAgents(string v)
 {
