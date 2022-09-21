@@ -1,7 +1,7 @@
 ﻿using AgentCoordination.CLI.Data;
 using Support.Chat.Portal.Common.DTO;
-using Support.Chat.Portal.Common.Models;
 using Microsoft.EntityFrameworkCore;
+using Support.Chat.Portal.Common.Enums;
 
 namespace AgentCoordination.CLI
 {

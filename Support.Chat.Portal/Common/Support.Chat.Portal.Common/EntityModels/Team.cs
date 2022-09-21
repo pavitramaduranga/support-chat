@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Support.Chat.Portal.Common.Enums;
 
 namespace Support.Chat.Portal.Common.Models
 {
@@ -16,12 +12,4 @@ namespace Support.Chat.Portal.Common.Models
         public ICollection<Agent> Agents { get; set; }
     }
 
-    public enum Shift
-    {
-        None,
-        OfficeTime,
-        Evening,
-        Night
-
-    }
 }

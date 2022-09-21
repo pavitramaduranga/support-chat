@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Support.Chat.Portal.Common.Enums;
 using Support.Chat.Portal.Common.Models;
 
 namespace AgentCoordination.CLI.Data

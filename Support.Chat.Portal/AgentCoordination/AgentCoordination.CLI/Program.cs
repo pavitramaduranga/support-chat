@@ -1,11 +1,9 @@
-﻿// See https://aka.ms/new-console-template for more information
-using RabbitMQ.Client;
+﻿using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
 using System.Text;
-using System.Linq;
 using AgentCoordination.CLI;
-using Support.Chat.Portal.Common.Models;
 using Support.Chat.Portal.Common.DTO;
+using Support.Chat.Portal.Common.Enums;
 
 Console.WriteLine("Agent Coordination CLI");
 
