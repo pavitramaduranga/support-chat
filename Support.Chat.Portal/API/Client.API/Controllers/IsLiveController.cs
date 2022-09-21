@@ -11,7 +11,6 @@ namespace Client.API.Controllers
         public string Get(string useremail)
         {
             return "Chat session is live";
-
         }
     }
 }

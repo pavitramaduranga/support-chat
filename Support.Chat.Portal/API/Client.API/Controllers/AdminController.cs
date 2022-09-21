@@ -1,8 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Caching.Distributed;
+﻿using Microsoft.AspNetCore.Mvc;
 using RabbitMQ.Client;
-using System.Threading.Channels;
 
 namespace Client.API.Controllers
 {
@@ -23,7 +20,6 @@ namespace Client.API.Controllers
         [HttpPost("Stop")]
         public ActionResult StopShift()
         {
-            // remove queues
             _channel.QueueDelete("TASK_QUEUE", false, false);
             _channel.QueueDelete("JUNIOR", false, false);
             _channel.QueueDelete("MIDLEVEL", false, false);

@@ -1,5 +1,4 @@
 ﻿using System.Text;
-using System.Threading.Channels;
 using RabbitMQ.Client;
 
 namespace Client.API.Services
