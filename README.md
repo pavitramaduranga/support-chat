@@ -54,6 +54,15 @@ This is to set the path of the SQLLite DB.
 <li>Agent.App.CLI - demonstrate the support chat agent</li>
 </ul>
 
+## Future Work
+
+<br>
+<ul>
+<li>Move the RabbitMQ logics to a diferent project and implement Apaptor patern</li>
+<li>Remove the identified inactive users from polling</li>
+<li>Improve the administrator endpoints to start a session</li>
+</ul>
+<br>
 ## Testing
 
 Below is how the load will be balanced during an office hour. (Assuming all clients are busy)
