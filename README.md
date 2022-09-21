@@ -7,6 +7,7 @@ Application demonstrate the Rabbbit MQ usage.
 <li>.Net 6</li>
 <li>RabbitMQ</li>
 <li>SqlLite DB</li>
+<li>Docker</li>
 </ul>
 
 # Solution Setup
