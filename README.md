@@ -1,4 +1,4 @@
-# Support chat portal
+# Chat Initiator Aplication
 Application demonstrate the Rabbbit MQ usage.
 
 ## Tech Stack
@@ -12,7 +12,7 @@ Application demonstrate the Rabbbit MQ usage.
 
 ## Solution Setup
 
-<b>RabbitMQ Configuration</b>
+### RabbitMQ Configuration
 </br>
 Use the below command to pull the docker image for RabbitMQ 
 <br>
@@ -28,7 +28,7 @@ Default username and password both is set to 'guest'
 
 ![image](https://user-images.githubusercontent.com/4363523/191338791-dd746f68-e212-4dba-9e13-a0963462aaa1.png)
 
-<b>DB Configuration</b>
+### DB Configuration
 </br>
 In the Visual Studio Package Manager Console, select the AgentCoordication.CLI and run the below commands :
 
@@ -44,7 +44,7 @@ To explore the SqlLite DB use https://sqlitebrowser.org/dl/.<br>
 Right click on the AgentCoordication.CLI. Go to properties and then click debug. Browse and set the working directory to the project folder.
 This is to set the path of the SQLLite DB.
 <br>
-<b>Project Structure</b>
+### Project Structure
 <br>
 
 ![image](https://user-images.githubusercontent.com/4363523/191039409-9d94f75a-4265-4305-b78d-e20287d05743.png)
@@ -54,10 +54,20 @@ This is to set the path of the SQLLite DB.
 <li>Agent.App.CLI - demonstrate the support chat agent</li>
 </ul>
 
+## Future Work
+
+<br>
+<ul>
+<li>Move the RabbitMQ logics to a diferent project and implement Apaptor patern</li>
+<li>Remove the identified inactive users from polling</li>
+<li>Improve the administrator endpoints to start a session</li>
+</ul>
+<br>
 ## Testing
 
 Below is how the load will be balanced during an office hour. (Assuming all clients are busy)
 
 <br>
+
 ![image](https://user-images.githubusercontent.com/4363523/191621286-c22821e1-5725-4706-8ae4-bcd10e146d77.png)
 
