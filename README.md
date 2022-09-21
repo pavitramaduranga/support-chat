@@ -1,4 +1,4 @@
-# support-chat
+# Support chat portal
 Application demonstrate the Rabbbit MQ usage.
 
 # Tech Stack
