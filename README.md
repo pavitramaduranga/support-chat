@@ -75,5 +75,5 @@ Below is how the load will be balanced during an office hour. (Assuming all clie
 
 <br>
 
-![image](https://user-images.githubusercontent.com/4363523/191621286-c22821e1-5725-4706-8ae4-bcd10e146d77.png)
+![image](https://user-images.githubusercontent.com/4363523/191832362-ca18da4a-443f-4a72-bb56-9e2083029552.png)
 
