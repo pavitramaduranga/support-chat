@@ -71,9 +71,20 @@ This is to set the path of the SQLLite DB.
 
 ## Testing
 
-Below is how the load will be balanced during an office hour. (Assuming all clients are busy)
+Below is how the load will be balanced during an office hour.
 
+<li>
+  <ul>1 Junior -> 1 * 10 * 0.4 * 1.5 = 6 (queue capacity)</ul>
+  <ul>2 Mid Level -> 2 * 10 * 0.6 * 1.5 = 18 (queue capacity)</ul>
+  <ul>1 Team Lead -> 1 * 10 * 0.5 * 1.5 = 7 (queue capacity)</ul>
+  <ul>6 Overflow -> 6 * 10 * 0.4 * 1.5 = 36 (queue capacity)</ul>
+</li>
+<br>
+Below diagram shows how this us disttibuted among agent queues.
+<br>
+The requests after the maximum queue length will not be added to the Session queue.
 <br>
 
-![image](https://user-images.githubusercontent.com/4363523/191832362-ca18da4a-443f-4a72-bb56-9e2083029552.png)
+![image](https://user-images.githubusercontent.com/4363523/191839670-e74d4330-a643-4277-885e-d05e1a64b275.png)
+
 
