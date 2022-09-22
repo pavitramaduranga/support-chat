@@ -3,13 +3,13 @@ using Support.Chat.Portal.Common.DTO;
 
 namespace AgentCoordination.CLI
 {
-    public class AgentQueInitiatorService
+    public class AgentQueueInitiatorService
     {
         private ConnectionFactory _factory;
         private readonly IConnection _connection;
         private IModel _channel;
 
-        public AgentQueInitiatorService()
+        public AgentQueueInitiatorService()
         {
             _factory = new ConnectionFactory() { HostName = "localhost" };
             _connection = _factory.CreateConnection();

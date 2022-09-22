@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using RabbitMQ.Client;
+using Support.Chat.Portal.Queue;
 
 namespace Client.API.Controllers
 {
@@ -7,25 +7,18 @@ namespace Client.API.Controllers
     [ApiController]
     public class AdminController : ControllerBase
     {
-        private ConnectionFactory _factory;
-        private readonly IConnection _connection;
-        private IModel _channel;
-        public AdminController()
+        private readonly IQueueService _queueService;
+
+        public AdminController(IQueueService queueService)
         {
-            _factory = new ConnectionFactory() { HostName = "localhost" };
-            _connection = _factory.CreateConnection();
-            _channel = _connection.CreateModel();
+            _queueService = queueService;
         }
 
         [HttpPost("Stop")]
         public ActionResult StopShift()
         {
-            _channel.QueueDelete("TASK_QUEUE", false, false);
-            _channel.QueueDelete("JUNIOR", false, false);
-            _channel.QueueDelete("MIDLEVEL", false, false);
-            _channel.QueueDelete("SENIOR", false, false);
-
-            return Created("", null);
+            _queueService.StopQueues();
+            return Created("Queues cleared", null);
         }
     }
 }

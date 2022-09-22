@@ -12,6 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\Common\Support.Chat.Portal.Queue\Support.Chat.Portal.Queue.csproj" />
     <ProjectReference Include="..\Client.API.Services\Client.API.Services.csproj" />
   </ItemGroup>
 

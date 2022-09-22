@@ -1,7 +1,5 @@
 ﻿using Client.API.Services;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using System.Net;
 
 
 namespace Client.API.Controllers
@@ -10,16 +8,17 @@ namespace Client.API.Controllers
     [ApiController]
     public class ChatController : ControllerBase
     {
-        public ChatController()
-        {
+        private readonly ISessionQueueService _sessionQueueService;
 
+        public ChatController(ISessionQueueService sessionQueueService)
+        {
+            _sessionQueueService = sessionQueueService;
         }
 
         [HttpGet]
         public string Get(string useremail)
         {
-            SessionQueService ss = new();
-            ss.PublishMessage(useremail);
+            _sessionQueueService.PublishMessageToSessionQueue(useremail);
             return "Chat Client connected";
         }
     }

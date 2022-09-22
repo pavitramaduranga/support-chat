@@ -8,13 +8,13 @@ using Support.Chat.Portal.Common.Enums;
 Console.WriteLine("Agent Coordination CLI");
 
 
-#region Agent Que Initiator
+#region Agent Queue Initiator
 
 AgentService agentService = new AgentService();
 AgentCapacityPerShift agentCapacityPerShift = agentService.GetAgentCapacityPerShift(Shift.OfficeTime);
 int totalCapacityOfTheShift = agentService.GetAgentCapacityPerShift(agentCapacityPerShift);
 
-AgentQueInitiatorService agentQueInitiator = new();
+AgentQueueInitiatorService agentQueInitiator = new();
 agentQueInitiator.InitializeAgentQueues(agentCapacityPerShift);
 
 #endregion

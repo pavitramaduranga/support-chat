@@ -3,11 +3,10 @@ using RabbitMQ.Client;
 
 namespace Client.API.Services
 {
-    public class SessionQueService
+    public class SessionQueueService : ISessionQueueService
     {
-        public void PublishMessage(string message)
+        public void PublishMessageToSessionQueue(string message)
         {
-
             var factory = new ConnectionFactory() { HostName = "localhost" };
             using (var connection = factory.CreateConnection())
             using (var channel = connection.CreateModel())
