@@ -1,4 +1,4 @@
-# Chat Initiator Aplication
+# Chat Initiator Application
 Application demonstrate the Rabbbit MQ usage.
 
 ## Application Architecture 
