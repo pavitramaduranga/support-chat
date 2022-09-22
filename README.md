@@ -72,7 +72,7 @@ This is to set the path of the SQLLite DB.
 ## Testing
 
 Below is how the load will be balanced during an office hour.
-<br>
+
 <li>
   <ul>1 Junior -> 1 * 10 * 0.4 * 1.5 = 6 (queue capacity)</ul>
   <ul>2 Mid Level -> 2 * 10 * 0.6 * 1.5 = 18 (queue capacity)</ul>
