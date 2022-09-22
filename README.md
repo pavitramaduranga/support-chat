@@ -83,6 +83,7 @@ Below is how the load will be balanced during an office hour.
 Below diagram shows how this us disttibuted among agent queues.
 The request after the maximum queue length will not be added to the Session queue.
 <br>
+
 ![image](https://user-images.githubusercontent.com/4363523/191839670-e74d4330-a643-4277-885e-d05e1a64b275.png)
 
 
