@@ -68,6 +68,7 @@ This is to set the path of the SQLLite DB.
 <li>Improve the administrator endpoints to start a session</li>
 </ul>
 <br>
+
 ## Testing
 
 Below is how the load will be balanced during an office hour. (Assuming all clients are busy)
