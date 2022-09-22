@@ -10,18 +10,17 @@ Console.WriteLine("Agent Coordination CLI");
 
 #region Agent Queue Initiator
 
-AgentService agentService = new AgentService();
+AgentService agentService = new();
 AgentCapacityPerShift agentCapacityPerShift = agentService.GetAgentCapacityPerShift(Shift.OfficeTime);
 int totalCapacityOfTheShift = agentService.GetAgentCapacityPerShift(agentCapacityPerShift);
 
 AgentQueueInitiatorService agentQueInitiator = new();
 agentQueInitiator.InitializeAgentQueues(agentCapacityPerShift);
 
+agentQueInitiator.InitializeQueues("TASK_QUEUE", totalCapacityOfTheShift);
 #endregion
 
 #region Listner to the session queue
-
-agentQueInitiator.InitializeQueues("TASK_QUEUE", totalCapacityOfTheShift);
 
 var factory = new ConnectionFactory() { HostName = "localhost" };
 using (var connection = factory.CreateConnection())
@@ -44,11 +43,13 @@ using (var channel = connection.CreateModel())
         channel.BasicAck(deliveryTag: ea.DeliveryTag, multiple: false);
     };
     channel.BasicConsume(queue: "TASK_QUEUE", autoAck: false, consumer: consumer);
+
+    Console.WriteLine(" Press enter to exit.");
+    Console.ReadLine();
 }
 #endregion
 
-Console.WriteLine(" Press enter to exit.");
-Console.ReadLine();
+
 
 
 void PublishToChatAgents(AgentCapacityPerShift agentCapacityPerShift, string message)

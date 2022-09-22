@@ -12,7 +12,7 @@ namespace Client.API.Controllers
 
         public ChatController(ISessionQueueService sessionQueueService)
         {
-            _sessionQueueService = sessionQueueService;
+           _sessionQueueService = sessionQueueService;
         }
 
         [HttpGet]
