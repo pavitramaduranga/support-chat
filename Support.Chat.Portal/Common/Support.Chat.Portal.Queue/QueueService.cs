@@ -20,6 +20,8 @@ namespace Support.Chat.Portal.Queue
             _channel.QueueDelete("JUNIOR", false, false);
             _channel.QueueDelete("MIDLEVEL", false, false);
             _channel.QueueDelete("SENIOR", false, false);
+            _channel.QueueDelete("OVERFLOW", false, false);
+            _channel.QueueDelete("TEAMLEAD", false, false);
         }
     }
 }
