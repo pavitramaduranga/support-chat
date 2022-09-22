@@ -1,5 +1,10 @@
-# Chat Initiator Aplication
+# Chat Initiator Application
 Application demonstrate the Rabbbit MQ usage.
+
+## Application Architecture 
+<br>
+
+![Final Diagram1 drawio](https://user-images.githubusercontent.com/4363523/191801009-b80a7fa5-1dae-46f7-8909-0bb4a95fc2ae.png)
 
 ## Tech Stack
 
@@ -63,6 +68,7 @@ This is to set the path of the SQLLite DB.
 <li>Improve the administrator endpoints to start a session</li>
 </ul>
 <br>
+
 ## Testing
 
 Below is how the load will be balanced during an office hour. (Assuming all clients are busy)
