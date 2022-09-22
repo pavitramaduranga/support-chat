@@ -71,8 +71,14 @@ This is to set the path of the SQLLite DB.
 
 ## Testing
 
-Below is how the load will be balanced during an office hour. (Assuming all clients are busy)
-
+Below is how the load will be balanced during an office hour.
+<br>
+<li>
+  <ul>1 Junior -> 1 * 10 * 0.4 </ul>
+  <ul>2 Mid Level -> 2 * 10 * 0.6 </ul>
+  <ul>1 Team Lead -> 1 * 10 * 0.5</ul>
+  <ul>6 Overflow -> 6 * 10 * 0.4</ul>
+</li>
 <br>
 
 ![image](https://user-images.githubusercontent.com/4363523/191832362-ca18da4a-443f-4a72-bb56-9e2083029552.png)
