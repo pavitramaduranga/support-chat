@@ -74,10 +74,10 @@ This is to set the path of the SQLLite DB.
 Below is how the load will be balanced during an office hour.
 <br>
 <li>
-  <ul>1 Junior -> 1 * 10 * 0.4 </ul>
-  <ul>2 Mid Level -> 2 * 10 * 0.6 </ul>
-  <ul>1 Team Lead -> 1 * 10 * 0.5</ul>
-  <ul>6 Overflow -> 6 * 10 * 0.4</ul>
+  <ul>1 Junior -> 1 * 10 * 0.4 * 1.5 = 6 (queue capacity)</ul>
+  <ul>2 Mid Level -> 2 * 10 * 0.6 * 1.5 = 18 (queue capacity)</ul>
+  <ul>1 Team Lead -> 1 * 10 * 0.5 * 1.5 = 7 (queue capacity)</ul>
+  <ul>6 Overflow -> 6 * 10 * 0.4 * 1.5 = 36 (queue capacity)</ul>
 </li>
 <br>
 
