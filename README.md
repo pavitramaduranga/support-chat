@@ -1,6 +1,12 @@
 # Chat Initiator Aplication
 Application demonstrate the Rabbbit MQ usage.
 
+## Application Architecture 
+<br>
+
+![Final Diagram1 drawio](https://user-images.githubusercontent.com/4363523/191801009-b80a7fa5-1dae-46f7-8909-0bb4a95fc2ae.png)
+
+<br>
 ## Tech Stack
 
 <ul>
