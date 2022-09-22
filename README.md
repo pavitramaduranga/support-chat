@@ -81,5 +81,6 @@ Below is how the load will be balanced during an office hour.
 </li>
 <br>
 
-![image](https://user-images.githubusercontent.com/4363523/191832362-ca18da4a-443f-4a72-bb56-9e2083029552.png)
+![image](https://user-images.githubusercontent.com/4363523/191839670-e74d4330-a643-4277-885e-d05e1a64b275.png)
+
 
